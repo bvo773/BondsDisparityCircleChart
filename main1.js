@@ -39,6 +39,7 @@ $(function () {
                     sliced: true,
                     selected: true
                 },
+                ['Asian', 3.0],
                 ['Others', 5.0]
             ]
         }]

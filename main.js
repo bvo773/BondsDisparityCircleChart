@@ -57,7 +57,7 @@ $(function () {
                 },
                 { name: 'Hispanic', y:5.08 },
                 { name: 'Asian', y: 5.35 }, 
-                { name: 'Others', y: 57.19 }
+                { name: 'Others (N/A)', y: 57.19 }
             ]
         }]
     });

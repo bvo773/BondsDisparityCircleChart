@@ -31,8 +31,8 @@ $(function () {
             type: 'pie',
             name: 'Race',
             data: [
-                ['White', 16.0],
                 ['Black', 35.0],
+                ['White', 16.0],
                 {
                     name: 'Hispanic',
                     y: 44.0,

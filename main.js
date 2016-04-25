@@ -48,16 +48,16 @@ $(function () {
         series: [{
             name: 'Race',
             data: [
-                { name: 'Black', y: 42.0 },
+                { name: 'Black', y: 11.96 },
                 {
                     name: 'White',
-                    y: 33.0,
+                    y: 20.42,
                     sliced: true,
                     selected: true
                 },
-                { name: 'Hispanic', y:22.0 },
-                { name: 'Asian', y: 1.0 }, 
-                { name: 'Others (N/A)', y: 2.0 }
+                { name: 'Hispanic', y:5.08 },
+                { name: 'Asian', y: 5.35 }, 
+                { name: 'Others', y: 57.19 }
             ]
         }]
     });

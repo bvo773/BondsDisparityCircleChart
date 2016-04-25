@@ -31,15 +31,14 @@ $(function () {
             type: 'pie',
             name: 'Race',
             data: [
-                ['Black', 35.0],
                 ['White', 16.0],
+                ['Black', 35.0],
                 {
                     name: 'Hispanic',
                     y: 44.0,
                     sliced: true,
                     selected: true
                 },
-                ['Asian', 3.0],
                 ['Others', 5.0]
             ]
         }]

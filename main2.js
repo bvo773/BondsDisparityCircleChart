@@ -38,18 +38,18 @@ $(function () {
         },
         series: [{
             name: 'Black',
-            data: [12]
+            data: [12.0]
 
         }, {
             name: 'White',
-            data: [20]
+            data: [20.0]
 
         },{
             name: 'Asian',
-            data: [5]
+            data: [5.0]
         }, {
             name: 'Hispanic',
-            data: [5]
+            data: [5.0]
         }]
     });
 });

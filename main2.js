@@ -37,7 +37,7 @@ $(function () {
         },
         series: [{
             name: 'Black',
-            data: [12.0]
+            data: [12.0,22]
 
         }, {
             name: 'White',

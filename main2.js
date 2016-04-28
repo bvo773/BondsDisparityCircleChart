@@ -25,8 +25,7 @@ $(function () {
         tooltip: {
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:} /100</b></td></tr>',
-            footerFormat: '</table>',
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
             shared: true,
             useHTML: true
         },
@@ -38,13 +37,13 @@ $(function () {
         },
         series: [{
             name: 'Black',
-            data: [12.0]
+            data: [12.0,22]
 
         }, {
             name: 'White',
             data: [20.0]
 
-        },{
+        }, {
             name: 'Asian',
             data: [5.0]
         }, {

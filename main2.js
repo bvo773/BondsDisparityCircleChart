@@ -1,54 +1,55 @@
-//Method to create the chart
 function makeHighchartsObject2(){
-    $(function () {
+$(function () {
     $('#container2').highcharts({
-
         chart: {
             type: 'column'
         },
-
         title: {
-            text: 'Per Capita for each race in Hartford'
+            text: 'Per capita for each race in Hartford'
         },
-
+        subtitle: {
+            text: 'Mirror CT'
+        },
         xAxis: {
-            categories: ['Hartford']
+            categories: [
+                'Hartford',
+            ],
+            crosshair: true
         },
-
         yAxis: {
-            allowDecimals: false,
             min: 0,
             title: {
-                text: 'Per Capita'
+                text: 'Per Capita/100'
             }
         },
-
         tooltip: {
-            formatter: function () {
-                return '<b>' + this.x + '</b><br/>' +
-                    this.series.name + ': ' + this.y +  '/100'+'<br/>' +
-                    'Total: ' + this.point.stackTotal;
-            }
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:} dollars</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
         },
-
         plotOptions: {
             column: {
-                stacking: 'normal'
+                pointPadding: 0.2,
+                borderWidth: 0
             }
         },
-
         series: [{
             name: 'Black',
-            data: [12],
+            data: [12]
+
         }, {
             name: 'White',
-            data: [20],
+            data: [20]
+
+        },{
+            name: 'Asian',
+            data: [5]
         }, {
             name: 'Hispanic',
-            data: [5],
-        }, {
-            name: 'Asian',
-            data: [5],
+            data: [5]
         }]
     });
 });

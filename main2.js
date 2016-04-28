@@ -1,6 +1,6 @@
 function makeHighchartsObject2(){
 $(function () {
-    $('#container').highcharts({
+    $('#container2').highcharts({
         chart: {
             type: 'column'
         },
